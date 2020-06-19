@@ -1,0 +1,94 @@
+.carousel {
+    position: relative;
+    width: 100%;
+    &-indicators {
+        position: absolute;
+        right: 0;
+        bottom: 20px;
+        left: 0;
+        z-index: 15;
+        display: flex;
+        justify-content: center;
+        padding-left: 0;
+        margin-right: 15%;
+        margin-left: 15%;
+        list-style: none;
+        li {
+            box-sizing: content-box;
+            width: 10px;
+            height: 10px;
+            margin-right: 3px;
+            margin-left: 3px;
+            text-indent: -999px;
+            cursor: pointer;
+            background-color: #000;
+            background-clip: padding-box;
+            border: 1px solid white;
+            border-radius: 100%;
+        }
+    }
+    &-inner {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+    }
+    &-caption {
+        position: absolute;
+        right: 10%;
+        bottom: 30%;
+        left: 10%;
+        z-index: 10;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: #fff;
+        text-align: center;
+        &_btn {
+            margin-top: 20px;
+            width: 12%;
+            height: 60px;
+            border: 2.0px solid #ffffff;
+            font-family: $lato;
+            font-size: 1.2vw;
+            font-weight: 900;
+            color: #ffffff;
+            background-color: transparent;
+        }
+    }
+    &-item {
+        position: relative;
+        display: none;
+        float: left;
+        width: 100%;
+        margin-right: -100%;
+        backface-visibility: hidden;
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        &_title {
+            font-family: $openSans;
+            font-size: 2vw;
+            font-weight: 300;
+            text-transform: uppercase;
+            letter-spacing: 0.3em;
+            color: #ffffff;
+        }
+        &_heading {
+            padding: 10px;
+            font-family: $lato;
+            font-size: 3.2vw;
+            font-weight: 900;
+            color: #ffffff;
+        }
+        &_subtitle {
+            font-family: $openSans;
+            font-size: 1.5vw;
+            font-weight: 300;
+            text-transform: uppercase;
+            color: #ffffff;
+        }
+    }
+    .active {
+        display: block
+    }
+}

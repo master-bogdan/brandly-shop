@@ -1,0 +1,80 @@
+@import 'base/mixin';
+
+.latest {
+    padding: 60px 0;
+    margin: 0 auto;
+    &__title {
+        text-align: center;
+        @include span-title;
+    }
+    &__category {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 60px;
+        &_card {
+            width: 32%;
+            height: 418px;
+            background-color: #222533;
+            padding: 30px 28px;
+            &-title {
+                font-family: $openSans;
+                font-size: 40px;
+                font-weight: 300;
+                font-style: italic;
+                color: #ffffff;
+            }
+            :hover{
+                transform: scale(1.1);
+                cursor: pointer;
+            }
+        }
+        .wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            border: 1px solid white;
+        }
+    }
+    &__sale {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+        &_card {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 49%;
+            height: 418px;
+            background-color: #222533;
+        }
+        &_card:hover{
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+        &_title {
+            font-family: $lato;
+            font-size: 45px;
+            line-height: 1.2;
+            font-weight: 900;
+            color: #ffffff;
+            text-align: center;
+        }
+    }
+    #man {
+        background: url(../img/man.jpg) center (center/cover) no-repeat;
+    }
+    #woman {
+        background: url(../img/woman.jpg) center (center/cover) no-repeat;
+    }
+    #watches {
+        background: url(../img/watch.jpg) center (center/cover) no-repeat;
+    }
+    #sale_40 {
+        background: url(../img/woman_2.jpg) center (center/cover) no-repeat;
+    }
+    #sale_mega {
+        background: url(../img/woman_3.jpg) center (center/cover) no-repeat;
+    }
+}

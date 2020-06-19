@@ -1,0 +1,9 @@
+@mixin span-title {
+    span {
+        margin: 0 auto;
+        display: block;
+        width: 113px;
+        height: 2px;
+        background-color: #dc0000;
+    }
+}

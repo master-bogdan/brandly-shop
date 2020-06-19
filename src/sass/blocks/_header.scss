@@ -1,0 +1,51 @@
+.header {
+    width: 100%;
+    position: absolute;
+    background-color: transparent;
+    z-index: 1;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    &__logo {
+        width: 15%;
+        opacity: 0.8;
+        a {
+        font-family: $bebasFont;
+        font-size: 34px;
+        font-weight: 700;
+        color: $redcolor;
+        text-transform: uppercase;
+        line-height: 19px;
+            span {
+                font-size: 18px;
+            }
+        }
+        :hover {
+            text-decoration: none;
+        }
+    }
+    nav {
+        width: 60%;
+        .menu {
+            display: flex;
+            list-style: none;
+            justify-content: space-between;
+            align-items: center;
+            &__item {
+                margin-right: 15px;
+            }
+            &__link {
+                font-family: $openSans;
+                font-size: 18px;
+                line-height: 19px;
+                font-weight: 400;
+                color: #ffffff;
+            }
+            :last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}

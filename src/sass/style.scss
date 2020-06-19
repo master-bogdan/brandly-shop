@@ -1,15 +1,30 @@
-@import 'libs/bootstrap-reboot.min.css';
-@import 'libs/bootstrap-grid.min.css';
+@import 'libs/bootstrap-reboot.min';
 @import 'libs/font';
 @import 'base/variables';
 
+h1 {
+    display: none;
+}
 
+h2 {
+    font-family: $openSans;
+    font-size: 40px;
+    font-weight: 300;
+    font-style: italic;
+    color: #333333;
+}
 
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 15px;
+}
 
-
-
-
-
+@import 'blocks/buttons';
+@import 'blocks/main';
+@import 'blocks/header';
+@import 'blocks/slider';
+@import 'blocks/latest';
 
 
 

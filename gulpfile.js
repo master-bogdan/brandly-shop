@@ -4,6 +4,7 @@ const sass = require('gulp-sass');
 const rename = require("gulp-rename");
 const autoprefixer = require('gulp-autoprefixer');
 const cleanCSS = require('gulp-clean-css');
+const sourcemaps = require('gulp-sourcemaps');
 const imagemin = require('gulp-imagemin');
 const htmlmin = require('gulp-htmlmin');
 
@@ -20,6 +21,7 @@ gulp.task('server', function() {
 
 gulp.task('styles', function() {
     return gulp.src("src/sass/**/*.+(scss|sass)")
+            .pipe(sourcemaps.init())
             .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
             .pipe(rename({
                 prefix: "",
@@ -27,6 +29,7 @@ gulp.task('styles', function() {
               }))
             .pipe(autoprefixer())
             .pipe(cleanCSS({compatibility: 'ie8'}))
+            .pipe(sourcemaps.write('.'))
             .pipe(gulp.dest("dist/css"))
             .pipe(browserSync.stream());
 });
