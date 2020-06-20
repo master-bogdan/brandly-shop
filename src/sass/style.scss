@@ -16,7 +16,7 @@ h2 {
 
 h3 {
     font-family: $lato;
-    font-size: 30px;
+    font-size: 28px;
     font-weight: 700;
     color: $redcolor;
 }
@@ -33,7 +33,7 @@ h3 {
 @import 'blocks/slider';
 @import 'blocks/latest';
 @import 'blocks/trending';
-
+@import 'blocks/blog';
 
 
 @import 'base/animation';

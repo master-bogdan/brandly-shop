@@ -1,0 +1,41 @@
+.blog {
+    padding: 60px 0;
+    &__title {
+        text-align: center;
+        @include span-title;
+    }
+    &__arcticles {
+        margin-top: 85px;
+        display: flex;
+        justify-content: space-between;
+        &-item {
+            width: 49%;
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+        &-subtitle {
+            margin-top: 29px;
+            opacity: 0.8;
+            font-family: $lato;
+            font-size: 16px;
+            line-height: 30px;
+            font-weight: 400;
+            color: #333333;
+        }
+        &-descr {
+            margin-top: 60px;
+            opacity: 0.6;
+            font-family: $openSans;
+            font-size: 18px;
+            line-height: 24px;
+            font-weight: 300;
+            color: #333333;
+        }
+        &-btn {
+            margin-top: 65px;
+        }
+    }
+
+}
