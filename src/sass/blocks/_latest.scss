@@ -26,6 +26,7 @@
             }
             :hover{
                 transform: scale(1.1);
+                transition: transform 0.5s;
                 cursor: pointer;
             }
         }
@@ -51,6 +52,7 @@
         }
         &_card:hover{
             transform: scale(1.1);
+            transition: transform 1s;
             cursor: pointer;
         }
         &_title {

@@ -1,0 +1,25 @@
+.trending__card_btn {
+    width: 70px;
+    height: 51px;
+    text-transform: uppercase;
+    font-family: $openSans;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #333333;
+
+}
+.btn_active, .btn:focus, .trending__card_btn:focus {
+    background-color: #333333;
+    color: #ffffff;
+}
+.btn {
+    width: 170px;
+    height: 51px;
+    background-color: transparent;
+    font-family: $openSans;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #333333;
+}

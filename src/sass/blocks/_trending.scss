@@ -1,0 +1,70 @@
+.trending {
+    padding: 60px 0;
+    background: url(../../img/bg/trending.png) center (center/cover) no-repeat;
+    &__title {
+        text-align: center;
+        @include span-title;
+    }
+    &__card {
+        display: flex;
+        margin-top: 60px;
+        justify-content: stretch;
+        &-img {
+            max-width: 100%;
+            height: auto;
+            margin-right: 29px;
+        }
+        &-subtitle {
+            margin-top: 29px;
+            font-family: $openSans;
+            font-size: 18px;
+            line-height: 25px;
+            font-weight: 400;
+            letter-spacing: 0.1em;
+            color: $textcolor;
+        }
+        &-descr {
+            margin-top: 59px;
+            font-family: $lato;
+            font-size: 18px;
+            line-height: 25px;
+            font-weight: 400;
+            letter-spacing: 0.1em;
+            color: $textcolor;
+        }
+        &-size {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 80px;
+            width: 70%;
+        }
+        &-submit {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            width: 70%;
+        }
+        &-indicators {
+            display: flex;
+            justify-content: center;
+            margin-top: 60px;
+            li {
+                box-sizing: content-box;
+                width: 12px;
+                height: 12px;
+                margin-right: 3px;
+                margin-left: 3px;
+                text-indent: -999px;
+                cursor: pointer;
+                background-clip: padding-box;
+                border: 1px solid black;
+                border-radius: 100%;
+                background-color: #868686;
+            }
+            .active {
+                background: transparent;
+                border: 1px solid $redcolor;
+            }
+        }
+    }
+}
