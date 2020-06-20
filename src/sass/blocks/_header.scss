@@ -33,6 +33,10 @@
             list-style: none;
             justify-content: space-between;
             align-items: center;
+            z-index: 999;
+            #close {
+                display: none;
+            }
             &__item {
                 margin-right: 15px;
             }

@@ -1,0 +1,152 @@
+@media screen and (max-width: 1199px) {
+    .header {
+        &__logo {
+            a {
+            font-size: 30px;
+                span {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+	
+@media screen and (max-width: 991px) {
+    .header {
+        &__logo {
+            a {
+            font-size: 24px;
+                span {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    .carousel-caption {
+        bottom: 20%;
+        &_btn {
+            width: 15%;
+        }
+    }
+    .trending {
+        &__card {
+            flex-wrap: wrap;
+            justify-content: center;
+            &-text {
+                width: 80%;
+                text-align: left;
+                margin-top: 20px;
+            }
+            &-size {
+                width: 60%;
+                margin: 0 auto;
+                margin-top: 30px;
+            }
+            &-submit {
+                width: 60%;
+                margin: 0 auto;
+                margin-top: 30px;
+            }
+            &-indicators {
+                padding: 0;
+            }
+        }
+    }
+}
+	
+@media screen and (max-width: 767px) {
+    .header {
+        &__logo {
+            width: 30%;
+            a {
+            font-size: 22px;
+                span {
+                    font-size: 14px;
+                }
+            }
+        }
+        nav{
+            .menu {
+                position: fixed;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: flex-start;
+                list-style: none;
+                top: 0;
+                left: -100%;
+                width: 60%;
+                background-color: rgba(0,0,0, 1);
+                height: 100vh;
+                transition: 0.6s all;
+                z-index: 999;
+                &__active {
+                    left: 0;
+                }
+                &__link {
+                    font-size: 21px;
+                    font-weight: 400;
+                    color: #ffffff;
+                    
+                }
+            }
+            .hamburger {
+                display: block;
+                width: 40px;
+                height: 30px;
+                margin-left: 80%;
+                span {
+                    display: block; 
+                    height: 5px;
+                    width: 100%;
+                    background-color: #fff; 
+                    margin-bottom: 4px;
+                    transition: 0.5s all
+                }
+                &_active {
+                    span {
+                        margin-bottom: -4px; 
+                        &:nth-child(1) {
+                            transform: translateY(5px) rotate(-45deg);
+                        }
+                        &:nth-child(2) {
+                            display: none;
+                        }
+                        &:nth-child(3) {
+                            transform: translateY(5px) rotate(45deg);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .carousel-caption {
+        bottom: 15%;
+        z-index: 0;
+    }
+    .carousel-indicators {
+        z-index: 0;
+    }
+    .latest {
+        &__category {
+            flex-wrap: wrap;
+            justify-content: center;
+            &_card {
+                width: 80%;
+                margin-bottom: 20px;
+            }
+        }
+        &__sale {
+            flex-wrap: wrap;
+            &_card {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+    }
+        
+}
+	
+@media screen and (max-width: 480px) {
+
+}
