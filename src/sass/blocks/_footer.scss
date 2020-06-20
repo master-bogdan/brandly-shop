@@ -1,0 +1,28 @@
+.footer {
+    padding: 76px 0;
+    background: url(../../img/bg/footer.jpg) center (center/cover) no-repeat;
+    &__header {
+        font-family: $openSans;
+        font-size: 18px;
+        line-height: 1.2;
+        font-weight: 300;
+        color: #ffffff;
+    }
+    form {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 31px;
+    }
+    input {
+        padding-left: 20px;
+        background: transparent;
+        border: 1px solid white;
+        width: 60%;
+        height: 45px;
+    }
+    input::placeholder {
+        font-family: $openSans;
+        font-weight: 300;
+        color: #ffffff;
+    }
+}
