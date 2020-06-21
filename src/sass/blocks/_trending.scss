@@ -2,6 +2,7 @@
     padding: 60px 0;
     background: url(../../img/bg/trending.png) center (center/cover) no-repeat;
     &__title {
+        visibility: hidden;
         text-align: center;
         @include span-title;
     }

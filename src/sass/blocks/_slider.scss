@@ -89,6 +89,10 @@
         }
     }
     .active {
-        display: block
+        display: block;
+        animation: fade 2s;
+    }
+    .i_active {
+        background: red;
     }
 }
