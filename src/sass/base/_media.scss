@@ -94,7 +94,7 @@
                 display: block;
                 width: 40px;
                 height: 30px;
-                margin-left: 80%;
+                margin-left: 70%;
                 span {
                     display: block; 
                     height: 5px;
@@ -127,10 +127,15 @@
     .carousel-indicators {
         z-index: 0;
     }
+    .carousel-caption_btn {
+        height: 40px;
+        width: 15%;
+    }
     .latest {
         &__category {
             flex-wrap: wrap;
             justify-content: center;
+            align-items: center;
             &_card {
                 width: 80%;
                 margin-bottom: 20px;
@@ -144,9 +149,66 @@
             }
         }
     }
+    .trending {
+        &__card {
+            &-size {
+                width: 100%;
+                margin: 0 auto;
+                margin-top: 30px;
+            }
+            &-submit {
+                width: 100%;
+            }
+        }
+    }
         
 }
 	
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 545px) {
+    .carousel-caption {
+        bottom: 15%;
+    }
+    .carousel-caption_btn {
+        height: 30px;
+        width: 15%;
+    }
+    .blog__arcticles {
+        flex-direction: column;
+        align-items: center;
+        &-item {
+            margin-top: 25px;
+            width: 95%;
+        }
+    }
+    .footer__header {
+        text-align: center;
+    }
+    #subscribe {
+        flex-wrap: wrap;
+        justify-content: center;
+        input {
+            width: 80%;
+        }
+    }
+    .footer_btn {
+        margin-top: 15px;
+        width: 40%;
+    }
+}
 
+@media screen and (max-width: 480px) {
+    .header {
+        &__logo {
+            width: 40%;
+            a {
+            font-size: 22px;
+                span {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    .carousel-caption {
+        display: none;
+    }
 }
