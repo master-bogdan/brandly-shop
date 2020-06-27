@@ -1,5 +1,7 @@
 # :dollar: BRANDLY - SHOP
 
+https://master-bogdan.github.io/brandly-shop/
+
 ### Page for onepage shop
 
 ---
