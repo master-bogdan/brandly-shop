@@ -13,3 +13,5 @@ I make only front end without onlineshop functions
 ---
 
 Main task was try work with online shop layouts, so in future this layout will be improve to full online shop
+  
+In 'src' folder you can watch original files
