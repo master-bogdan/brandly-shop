@@ -1,14 +1,17 @@
 # :dollar: BRANDLY - SHOP
 
-https://master-bogdan.github.io/brandly-shop/
+DEMO - https://master-bogdan.github.io/brandly-shop/
 
 ### Page for onepage shop
 
 ---
 I make only front end without onlineshop functions
-1.  HTML5
-2.  CSS3 with animations
-3.  Native JS slider
+### Technologies used
+1. HTML5
+2. CSS3 with animations
+3. Native JS slider
+4. Gulp
+5. SCSS
 
 ---
 
